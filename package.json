@@ -1,0 +1,29 @@
+{
+  "name": "mouminexpense",
+  "version": "1.0.0",
+  "description": "I built it using the MERN stack.",
+  "homepage": "https://github.com/mohamedabdiah/mouminExpense#readme",
+  "bugs": {
+    "url": "https://github.com/mohamedabdiah/mouminExpense/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedabdiah/mouminExpense.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "mouminexpense": "file:",
+    "prisma": "^6.4.1"
+  }
+}
