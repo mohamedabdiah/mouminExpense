@@ -79,4 +79,25 @@ router.post("login", async (req, res) => {
   }
 });
 
+router.get('/profile',async(req,res)=>{
+  try {
+    const user = await prisma.user.findUnique({
+      where:{id:req.user.id},
+      select:{
+        id:true,
+        email: true,
+        name: true,
+        createdAt: true
+      }
+    })
+    res.status(200).json({
+      user
+    })
+  } catch (error) {
+    res.status(500).json({
+      message: "Server Error"
+    })
+  }
+});
+
 module.exports = router;
